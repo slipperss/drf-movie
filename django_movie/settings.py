@@ -85,27 +85,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_movie.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'movie',
-#         'USER': 'postgres',
-#         'PASSWORD': '123456',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres',
-#         'PASSWORD': '123456',
-#         'HOST': 'dm_db',
-#         'PORT': 5432
-#     }
-# }
 # DATABASES = {'default':
 #     {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -237,8 +216,6 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = '7363441'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'tGZ3sAGJeEA46Odcmb6N'
 
 AUTHENTICATION_BACKENDS = (
     # 'rest_framework_social_oauth2.backends.DjangoOAuth2',
@@ -296,7 +273,7 @@ SIMPLE_JWT = {
 # smtp
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'djangosc876@gmail.com'
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 587
+EMAIL_PORT = 1
