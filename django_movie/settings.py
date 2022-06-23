@@ -106,23 +106,23 @@ WSGI_APPLICATION = 'django_movie.wsgi.application'
 #         'PORT': 5432
 #     }
 # }
-DATABASES = {'default':
-    {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-#
-# DATABASES = {
-#     "default": {
-#         "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
-#         "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR, "db.sqlite3")),
-#         "USER": os.environ.get("POSTGRES_USER", "user"),
-#         "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
-#         "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
-#         "PORT": os.environ.get("POSTGRES_PORT", "5432"),
+# DATABASES = {'default':
+#     {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    "default": {
+        "ENGINE": os.environ.get("POSTGRES_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("POSTGRES_DB", os.path.join(BASE_DIR, "db.sqlite3")),
+        "USER": os.environ.get("POSTGRES_USER", "user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "password"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
+    }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
